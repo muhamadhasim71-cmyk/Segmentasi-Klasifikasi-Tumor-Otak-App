@@ -7,7 +7,7 @@ from PIL import Image
 # Konfigurasi Halaman
 st.set_page_config(page_title="Brain Tumor Detection", layout="wide")
 
-st.title("🧠 Brain Tumor Segmentation & Classification")
+st.title("🧠 Segmentasi & Klasifikasi Tumor Otak")
 st.write("Unggah gambar MRI untuk mendeteksi keberadaan dan lokasi tumor otak.")
 
 # 1. Load Model
@@ -70,4 +70,5 @@ if uploaded_file is not None:
     if "POSITIVE" in label:
         st.warning("Peringatan: Sistem mendeteksi adanya massa tumor. Segera konsultasikan dengan ahli radiologi.")
     else:
+
         st.success("Sistem tidak mendeteksi adanya massa tumor yang signifikan.")
